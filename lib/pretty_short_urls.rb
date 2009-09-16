@@ -1,0 +1,2 @@
+require 'pretty_short_urls_routes'
+require 'pretty_short_urls_redirect_controller'

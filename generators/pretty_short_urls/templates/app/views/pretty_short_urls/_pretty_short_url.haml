@@ -1,0 +1,12 @@
+%tr
+  %td
+    =h pretty_short_url.name
+  %td
+    =h pretty_short_url.url
+  %td
+    = link_to 'Preview Link', pretty_short_url.url, :target => :blank
+  %td
+    = link_to 'Edit', edit_pretty_short_url_path(pretty_short_url)
+  %td
+    = link_to 'Destroy', pretty_short_url_path(pretty_short_url), :confirm => 'Are you sure?', :method => :delete 
+

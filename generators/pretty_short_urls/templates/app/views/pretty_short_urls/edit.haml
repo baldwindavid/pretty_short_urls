@@ -1,0 +1,10 @@
+%h2 Edit Short URL
+
+= error_messages_for :pretty_short_url
+
+- form_for :pretty_short_url, :url => pretty_short_url_path(@pretty_short_url), :html => {:method => :put} do |f|
+  = render :partial => "pretty_short_url_form", :locals => {:f => f} 
+  = submit_tag "Update Short URL" 
+  
+= link_to "Back", pretty_short_urls_path
+  

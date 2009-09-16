@@ -1,0 +1,9 @@
+%h2 Short URLs
+
+%table
+  %tr
+    %th Name
+    %th URL
+  = render :partial => "pretty_short_url", :collection => @pretty_short_urls 
+
+= link_to "New Short URL", new_pretty_short_url_path 
